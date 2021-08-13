@@ -1,0 +1,170 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffc501;
+}
+
+.container {
+  background-color: white;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  height: 50%;
+}
+
+.quote {
+  margin: 20px;
+  padding-bottom: 20px;
+}
+
+.fas {
+  font-size: 50px;
+  color: #ffc501;
+}
+
+h1 {
+  color: #ffc501;
+  text-align: center;
+  position: relative;
+  font-size: 1.8rem;
+  margin: 40px 40px;
+  animation: Slide-Down 2.1s ease;
+}
+
+h3 {
+  color: #ffc501;
+    float: right;
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-right: 30px;
+    animation: Slide-Left 2.1s ease;
+}
+
+.button {
+    margin: 40px; 
+}
+  
+#button {
+  float: right;
+  background-color: #ffc501;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  padding: 10px;
+  margin: 5px;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  transition: transform .3s;
+}
+
+#button:hover {
+  background-color: white;
+  color: #ffc501; 
+  border: solid #ffc501;
+  cursor: pointer;
+  transform: scale(1.13)
+}
+
+a {
+  display: inline-block;
+  font-size:30px;
+  margin: 5px;
+  background-color: #ffc501;
+  padding: 10px;
+  color: white;
+}
+
+a:hover {
+  background-color: white;
+  color: #ffc501; 
+  cursor: pointer;
+}
+
+
+
+@keyframes Slide-Down {
+  0%{
+    transform: translateY(-250px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes Slide-Left {
+  0%{
+    transform: translateX(100px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+  
+} 
+
+@media screen and (max-width: 700px) {
+  .container {
+    
+    height: 80%;
+  }
+   h1 {
+     font-size: 1.1rem;
+   }
+
+   h3 {
+     font-size: .8rem;
+   }
+  
+  #button {
+    float: none;
+    display: block;
+    font-size: 20px;
+    margin: 40px auto 30px;
+    
+  }
+  
+  .button{
+    text-align: center;
+    margin-top: 60px;
+    
+  }
+
+  a {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1160px){
+h1 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1rem;
+}
+
+#button {
+  font-size: 1rem;
+}
+
+a {
+  font-size: 1rem;
+}
+}
+  
+
+
+
+
+
+
+
+
+
+
