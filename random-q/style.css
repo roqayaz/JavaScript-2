@@ -17,11 +17,12 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   padding: 10px;
-  height: 50%;
+  height: 60%;
+
 }
 
 .quote {
-  margin: 20px;
+  margin: 40px;
   padding-bottom: 20px;
 }
 
@@ -34,7 +35,7 @@ h1 {
   color: #ffc501;
   text-align: center;
   position: relative;
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin: 40px 40px;
   animation: Slide-Down 2.1s ease;
 }
