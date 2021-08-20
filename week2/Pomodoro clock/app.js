@@ -5,35 +5,49 @@ const pauseIcon = document.getElementById("pause-icon");
 const stopIcon = document.getElementById("stop-icon");
 let sessionLength = document.getElementById("session-length");
 const timeDisplay = document.getElementById("time");
+const minute = document.getElementById('minute');
+const second = document.getElementById('second');
+let counter = 25;
+
 
 // arrow up and down function
-let counter = 26;
-
-
-upIcon.addEventListener('click', function(){
-    
-    sessionLength.textContent = counter.toString();
+const arrowUp = () => {
     counter++;
-    if(counter === 60 ){
+    if(counter == 60 ){
         counter = 0;
-    }
-    return counter
-});
+    };
+    sessionLength.textContent = counter;
+    minute.textContent = counter;
 
-downIcon.addEventListener('click', function(){
-    
-    sessionLength.textContent = counter.toString();
+};
+
+const arrowDown = () => {
     counter--;
-    if(counter === 0 ){
+    if(counter == 0 ){
         counter = 60;
-    }
-    return counter
-});
+    };
+    sessionLength.textContent = counter;
+    minute.textContent = counter;
+}
+
+
+// event listener
+
+upIcon.addEventListener('click', arrowUp);
+
+downIcon.addEventListener('click', arrowDown);
 
 
 
 playIcon.addEventListener('click', function(){
+   
+    const timer = () => {
+        parseInt(second--);
+        
+    }
+    timer();
+    const timing = setInterval(timer, 1000);
+        
     
-    timeDisplay.textContent = `${Math.floor(counter)}:${Math.floor(sessionLength % 60)}`;
 })
 
