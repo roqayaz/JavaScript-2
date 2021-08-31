@@ -7,14 +7,17 @@ let sessionLength = document.getElementById("session-length");
 const timeDisplay = document.getElementById("time");
 let minute = document.getElementById('minute');
 let second = document.getElementById('second');
+let colon = document.getElementById('colon')
+const alarm = new Audio ('classicAlarm.wav')
 let counter = 25;
+
 
 
 // arrow up and down function
 const arrowUp = () => {
     counter++;
     if(counter == 60 ){
-        counter = 0;
+        counter = 1;
     };
     sessionLength.textContent = counter;
     minute.textContent = counter;
@@ -24,13 +27,15 @@ const arrowUp = () => {
 const arrowDown = () => {
     counter--;
     if(counter == 0 ){
-        counter = 60;
+        counter = 59;
     };
     sessionLength.textContent = counter;
     minute.textContent = counter;
 }
 
-//play countdown
+//play and pause countdown
+
+let timeRun;
 const playCountdown = () => {
    
     function timer()
@@ -40,16 +45,23 @@ const playCountdown = () => {
         } else if (minute.textContent != 0 && second.textContent == 0){
             second.textContent = 59;
             minute.textContent --;
-        } else ( time.textContent = `Time's up!`)
+        } else {
+            alarm.play();
+            minute.textContent = `Time's up!`;
+            second.textContent = "";
+            colon.textContent = "";
+            stopIcon.addEventListener('click', stopCountdown);
+            clearInterval(timeRun);
+            };          
     }
     timer();
-    const timing = setInterval(timer, 1000);
+   timeRun = setInterval(timer, 1000);
 
     const pauseCountdown = () => {
+        pauseIcon.removeEventListener('click', pauseCountdown);
         playIcon.addEventListener('click', playCountdown);
-
-        clearInterval(timing);
-    
+        stopIcon.addEventListener('click', stopCountdown);
+        clearInterval(timeRun);
        
     }
 
@@ -57,12 +69,21 @@ const playCountdown = () => {
     downIcon.removeEventListener('click', arrowDown);
     playIcon.removeEventListener('click', playCountdown);
     pauseIcon.addEventListener('click', pauseCountdown);
-
-  
+    stopIcon.addEventListener('click', stopCountdown);
 }
 
+ //stop countdown
 
-
+ const stopCountdown = () => {
+    minute.textContent = 25;
+    second.textContent = '00';
+    sessionLength.textContent = 25;
+    colon.textContent = " : ";
+    clearInterval(timeRun);
+    playIcon.addEventListener('click', playCountdown);
+    upIcon.addEventListener('click', arrowUp);
+    downIcon.addEventListener('click', arrowDown);
+}
 
 // event listener
 
@@ -72,8 +93,9 @@ downIcon.addEventListener('click', arrowDown);
 
 playIcon.addEventListener('click', playCountdown); 
 
-pauseIcon.addEventListener('click', pauseCountdown)
-    
+stopIcon.addEventListener('click', stopCountdown);
+
+
         
     
 

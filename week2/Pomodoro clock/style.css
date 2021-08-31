@@ -54,6 +54,12 @@ body {
 
 .session {
 padding: 30px;
+border: solid #013738;
+border-width: 10px;
+border-radius: 15%;
+width: 40%;
+margin: auto;
+margin-top: 20px;
 
 }
 
@@ -75,4 +81,37 @@ padding: 30px;
     margin-left: 30px;
     cursor: pointer;
     
+}
+
+@media screen and (max-width: 900px) {
+    .icons i {
+        font-size: 1.5rem;
+        
+    }
+
+    .header {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .container h3 {
+        font-size: 2rem;
+    }
+
+    .session h1 {
+        font-size: 1.5rem;
+    }
+
+    .length {
+        font-size: 2rem;
+    }
+
+    .session {
+        width: 90%;
+    }
+
+    .session h3 {
+        font-size: 1.5rem;
+    }
+
 }
