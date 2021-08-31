@@ -1,8 +1,8 @@
 
 * {
-        padding: 0%;
-        margin: 0%;
-        box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
 }
 
 body {
@@ -10,16 +10,16 @@ body {
 }
 
 .container {
-  width: 70%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  padding: 10px;
-  height: 80%;
-  text-align: center; 
-  color: antiquewhite;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    height: 80%;
+    text-align: center; 
+    color: antiquewhite;
 }
 
 .header {
@@ -53,13 +53,13 @@ body {
 }
 
 .session {
-padding: 30px;
-border: solid #013738;
-border-width: 10px;
-border-radius: 15%;
-width: 40%;
-margin: auto;
-margin-top: 20px;
+    padding: 30px;
+    border: solid #013738;
+    border-width: 10px;
+    border-radius: 50%;
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
 
 }
 
@@ -107,11 +107,10 @@ margin-top: 20px;
     }
 
     .session {
-        width: 90%;
+        width: 70%;
     }
 
     .session h3 {
         font-size: 1.5rem;
     }
-
 }
