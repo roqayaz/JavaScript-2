@@ -160,6 +160,10 @@ footer {
     font-weight: bold;
   }
 
+  #heart {
+    color: red;
+  }
+
 @keyframes modalopen {
   from {
     opacity: 0;
