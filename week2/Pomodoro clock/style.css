@@ -94,6 +94,10 @@ color: white;
   
 }
 
+#heart {
+    color: red;
+}
+
 @media screen and (max-width: 900px) {
     .icons i {
         font-size: 1.5rem;
