@@ -14,7 +14,7 @@ body {
 
 .container {
   background-color: #181818;
-  width: 35%;
+  width: 40%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -134,9 +134,6 @@ form {
     font-family: 'IBM Plex Mono', monospace, serif;
     
   }
-input {
-    
-}
 
 
 #total {
@@ -178,4 +175,28 @@ footer {
     #heart {
         color: #ff9900;
         
+    }
+
+    @media screen and (max-width: 900px) {
+        .container {
+            width: 70%;
+        }
+
+        h3{
+            font-size: 1rem;
+            
+            margin-top: 0px;
+        }
+
+        form {
+            margin-top: 10px;
+        }
+
+        #button {
+            margin-top: 5px;
+            font-size: 1rem;
+        }
+        h2 {
+            font-size: 10px;
+        }
     }
