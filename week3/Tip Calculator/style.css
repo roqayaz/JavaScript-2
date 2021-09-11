@@ -9,7 +9,6 @@
 body {
     background-color: white;
     font-family: 'IBM Plex Mono', monospace, serif;
-
 }
 
 .container {
@@ -23,27 +22,22 @@ body {
   padding: 10px;
   height: 80%;
   text-align: center;
-
 }
 
 .header {
     background-color: #cccccc;
     padding: 10px;
     border: solid #cccccc;
-   
     color: #181818;
 }
 
 #sign {
-    color: #f8f9fa;
-   
+    color: #f8f9fa; 
 }
 
-.bill{
+.bill {
     margin-bottom: 20px;
-    margin-right: 16px;
-
-    
+    margin-right: 16px;  
 }
 
 #bill {
@@ -70,8 +64,7 @@ body {
 }
 
 .people {
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;  
 }
 
 #people {
@@ -82,6 +75,7 @@ body {
     border: none;
     outline: none;
 }
+
 h3{
     font-size: 1.2rem;
     color: #f8f9fa;
@@ -99,14 +93,12 @@ h3{
     cursor: pointer;
     margin-bottom: 20px;
     margin-top: 30px;
-    font-family: 'IBM Plex Mono', monospace, serif;
-    
+    font-family: 'IBM Plex Mono', monospace, serif; 
 }
 
 #button:hover {
 background-color: #f8f9fa;
 color: #ff9900;
-
 }
 
 form {
@@ -144,10 +136,7 @@ form {
     border: solid #cccccc;
     width: 45%;
     margin: auto;
-    display: none;
-    
-    
-  
+    display: none; 
 }
 
 #each {
@@ -171,7 +160,6 @@ footer {
       width: 100%;
       height: 2rem;
       font-weight: bold;
-      
     }
     
     #heart {
@@ -185,11 +173,10 @@ footer {
         }
 
         h3{
-            font-size: .8rem;
-            
+            font-size: .8rem; 
             margin-top: 0px;
         }
-
+        
         form {
             margin-top: 10px;
         }
@@ -198,6 +185,7 @@ footer {
             margin-top: 5px;
             font-size: .8rem;
         }
+
         h2 {
             font-size: .8rem;
         }
@@ -210,7 +198,6 @@ footer {
 
         h3{
             font-size: 1rem;
-            
             margin-top: 0px;
         }
 
@@ -222,6 +209,7 @@ footer {
             margin-top: 5px;
             font-size: 1rem;
         }
+
         h2 {
             font-size: .8rem;
         }
