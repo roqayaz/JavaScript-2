@@ -164,6 +164,7 @@ footer {
     
     #heart {
         color: #ff9900;
+        font-size: 1rem;
         
     }
 
@@ -176,7 +177,7 @@ footer {
             font-size: .8rem; 
             margin-top: 0px;
         }
-        
+
         form {
             margin-top: 10px;
         }
